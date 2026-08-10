@@ -1,33 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "DM Sans", sans-serif;
     background-color: black;
     color: white;
 }
 
-nav{
+nav {
     width: 100%;
-    background: 
-    url('subtle-grid-pattern.png') repeat center,
-    #121212;
+    background:
+        url('subtle-grid-pattern.png') repeat center,
+        #121212;
     padding: 9px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
-    box-shadow: inset 0 2px 4px rgba(46, 139, 87, 0.4);
+    box-shadow: inset 0 2px 15px rgba(46, 139, 87, 0.4);
     position: fixed;
-    
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: calc(100% - 40px);
+    max-width: 1500px;
+    border-radius: 16px;
 }
 
-#Logo{
+#Logo {
     height: 70px;
     width: 76px;
     margin: -9px;
@@ -35,13 +41,13 @@ nav{
     margin-right: 19rem;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     gap: 36px;
 }
 
-.nav-links li a{
+.nav-links li a {
     position: relative;
     font-size: 13px;
     font-weight: 400;
@@ -50,16 +56,17 @@ nav{
     transition: 0.3s;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: #2E8B57;
     text-shadow: 0 0 5px #2E8B57;
 }
 
-.btns{
+.btns {
     display: flex;
+    margin-right: 10px;
 }
 
-.contact{
+.contact {
     padding: 16px;
     width: 120px;
     font-weight: 500;
@@ -72,7 +79,7 @@ nav{
     transition: 0.3s;
 }
 
-.contact:hover{
+.contact:hover {
     color: #FFFFFF;
     background-color: #C83200;
     box-shadow: 0 0 25px #C83200;
