@@ -16,7 +16,7 @@ nav{
     width: 100%;
     background: 
     url('subtle-grid-pattern.png') repeat center,
-    linear-gradient(45deg, #005418, #57C785);
+    #121212;
     padding: 32px;
 
 }
@@ -39,13 +39,13 @@ nav{
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
-    color: orange;
+    color: #F5F5F0;
     transition: 0.3s;
 }
 
 .nav-links li a:hover{
-    color: rgb(255, 213, 0);
-    text-shadow: 0 0 5px rgb(255, 213, 0);
+    color: #2E8B57;
+    text-shadow: 0 0 5px #2E8B57;
 }
 
 .btns{
@@ -57,15 +57,16 @@ nav{
     width: 120px;
     font-weight: 500;
     border-radius: 40px;
-    background: #ff0000;
-    color: #016767;
-    box-shadow: 0 0 15px #ff0000;
+    background: #FFFFFF;
+    color: #C83200;
+    box-shadow: 0 0 15px #FFFFFF;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .contact:hover{
-    color: #ff0000;
-    background-color: #016767;
+    color: #FFFFFF;
+    background-color: #C83200;
+    box-shadow: 0 0 25px #C83200;
 }
