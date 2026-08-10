@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    width: 100%;
+    background: 
+    url('subtle-grid-pattern.png') repeat center,
+    linear-gradient(45deg, #005418, #57C785);
+    padding: 32px;
+
+}
+
+#Logo{
+    height: 70px;
+    width: 76px;
+    margin: -9px;
+    padding: 0px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: orange;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: rgb(255, 213, 0);
+    text-shadow: 0 0 5px rgb(255, 213, 0);
+}
+
+.btns{
+    display: flex;
+}
+
+.contact{
+    padding: 16px;
+    width: 120px;
+    font-weight: 500;
+    border-radius: 40px;
+    background: #ff0000;
+    color: #016767;
+    box-shadow: 0 0 15px #ff0000;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact:hover{
+    color: #ff0000;
+    background-color: #016767;
+}
