@@ -79,7 +79,7 @@ nav {
 
 .nav-links li a:hover {
   color: #2e8b57;
-  text-shadow: 0 0 5px #2e8b57;
+  text-shadow: 0.7px 0.7px 1px #ffffff;
   background: rgba(255, 255, 255, 0.22);
   transform: translateY(-2px) scale(1.03);
   box-shadow:
