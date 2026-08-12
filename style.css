@@ -147,9 +147,12 @@ nav {
   align-items: center;
   text-align: center;
   font-size: 50px;
-  text-align: center;
   color: rgb(53, 158, 0);
   box-shadow: 0 0 40px white;
   height: 100vh;
   width: 100vw;
+}
+
+.Main-title div {
+  margin: 10px 0;
 }
