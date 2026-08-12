@@ -123,12 +123,12 @@ nav {
 
 /* NavBar Work Ends Here */
 
-.hero-section{
+.hero-section {
   width: 100dvh;
   height: 100dvh;
 }
 
-#Hero-Section-Video{
+#Hero-Section-Video {
   position: fixed;
   top: 0;
   left: 0;
@@ -136,4 +136,20 @@ nav {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+  color: black;
+  opacity: 30%;
+}
+
+.Main-title {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(53, 158, 0);
+  box-shadow: 0 0 40px white;
+  height: 100vh;
+  width: 100vw;
 }
