@@ -124,35 +124,42 @@ nav {
 /* NavBar Work Ends Here */
 
 .hero-section {
-  width: 100dvh;
-  height: 100dvh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #Hero-Section-Video {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  color: black;
-  opacity: 30%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1; 
 }
 
 .Main-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 50px;
-  color: rgb(53, 158, 0);
-  box-shadow: 0 0 40px white;
-  height: 100vh;
-  width: 100vw;
+  z-index: 2; 
 }
 
 .Main-title div {
   margin: 10px 0;
+}
+
+.Main-title-text{
+  font-size: 50px;
+  color: rgb(53, 158, 0);
+  text-align: center;
+  margin: 10px 0; 
 }
