@@ -150,6 +150,23 @@ nav {
   gap: 1.5rem;
 }
 
+/* Responsive Navbar */
+
+@media (max-width: 1500px) and (orientation: portrait) {
+  #Logo{
+    height: 70px;
+    width: auto;
+    margin: -9px;
+    flex: 1;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: 63%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 10;
+  }
+}
+
 /* NavBar Work Ends Here */
 
 .hero-section {
