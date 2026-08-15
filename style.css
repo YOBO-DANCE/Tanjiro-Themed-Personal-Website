@@ -198,7 +198,7 @@ nav {
   animation-delay: 0.9s;
 }
 .delay-3 {
-  animation-delay: 1.2s;
+  animation-delay: 1.4s;
 }
 .delay-4 {
   animation-delay: 2.3s;
@@ -214,7 +214,7 @@ nav {
 /* Main-title revealup animation work ends here*/
 
 .Main-title-text {
-  font-size: 75px;
+  font-size: clamp(50px, 3.90625vw, 150px);
   color: #000000;
   text-align: center;
   margin: 10px 0;
@@ -256,3 +256,4 @@ nav {
   /* Soft box shadow to elevate the card from the video */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
+
