@@ -1,7 +1,3 @@
-
-![Logo](assets\a1b25ae64627065abc14c90e6240d8e1.jpg)
-
-
 # TANJIRO THEMED PERSONAL WEBSITE! 👺
 
 Hey fellow programmers! Dive into my world with tanjiro and his adventure.
