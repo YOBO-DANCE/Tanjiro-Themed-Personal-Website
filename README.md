@@ -1,5 +1,5 @@
 
-![Logo]("C:\Users\rhhat\OneDrive\Desktop\Stardance\New folder\assets\a1b25ae64627065abc14c90e6240d8e1.jpg")
+![Logo](assets\a1b25ae64627065abc14c90e6240d8e1.jpg)
 
 
 # TANJIRO THEMED PERSONAL WEBSITE! 👺
