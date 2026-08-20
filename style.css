@@ -56,6 +56,7 @@ nav {
 #Logo {
   height: 50px;
   width: auto;
+  cursor: default;
   margin: -9px;
   flex: 1;
   align-items: center;
@@ -113,6 +114,13 @@ nav {
     12px 12px 24px #2e8b57;
 }
 
+.nav-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
 .nav-links li a:active {
   transform: translateY(1px) scale(0.98);
   box-shadow:
@@ -152,6 +160,40 @@ nav {
   gap: 1.5rem;
 }
 
+.hamburger{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0;
+  margin: 10px;
+}
+
+.hamburger .bar{
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
 /* Responsive Navbar */
 
 @media (max-width: 1023px) {
@@ -159,10 +201,57 @@ nav {
     position: static;
     transform: none;
     order: -1;
+    cursor: default;
     margin: 0;
     margin-right: auto;
+    margin-left: -10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide mobile drawer off-screen by default */
+  .nav-menu {
+    position: fixed;
+    top: 75px;
+    left: -110%; /* Hidden off the left edge */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 16px;
+    
+    /* Frosted glass background matching your theme */
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    
+    transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Slide drawer in when hamburger is clicked */
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%;
+    text-align: center;
   }
 }
+
 
 /* NavBar Work Ends Here */
 
@@ -228,7 +317,7 @@ nav {
 /* Main-title revealup animation work ends here*/
 
 .Main-title-text {
-  font-size: clamp(50px, 3.90625vw, 100px);
+  font-size: clamp(25px, 3.90625vw, 100px);
   color: #000000;
   text-align: center;
   margin: 10px 0;
@@ -270,3 +359,14 @@ nav {
   /* Soft box shadow to elevate the card from the video */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
+
+/* Responsive Glass Box work starts here */
+
+
+@media (max-width: 390px) {
+  .glass-box{
+    padding: 40px 30px;
+  } 
+}
+
+/* Responsive Glass Box Work ends here */
