@@ -465,8 +465,7 @@ nav {
 }
 /* Scroll animation work ends here */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+DE+LA+Guides&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+AU+TAS:wght@100..400&display=swap');
 
 .bio{
   height: 100%;
@@ -480,18 +479,19 @@ nav {
 }
 
 .Hero-title{
-  font-size: 190px;
+  font-size: 100px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 #Hero-text-normal{
   font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #Hero-text-cursive{
-  font-family: "Playwrite NZ Basic Guides", cursive;
+  font-family: "Playwrite AU TAS", cursive;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
