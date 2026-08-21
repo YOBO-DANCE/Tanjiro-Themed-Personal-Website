@@ -1,81 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanjiro Themed Personal Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sekuya&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="NavBar">
-      <nav>
-        <a href="#" class="logo">
-          <img src="assets/Logo.png" alt="LOGO" id="Logo" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanjiro Themed Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sekuya&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
 
-        <div class="nav-menu">
-          <ul class="nav-links nav-left">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Who am I?</a></li>
-            <li><a href="#">My Interests</a></li>
-            <!-- <li><a href="#">My O My</a></li> -->
-            <li><a href="#">My Goals</a></li>
-          </ul>
+<body>
+  <div class="NavBar">
+    <nav>
+      <a href="#" class="logo">
+        <img src="assets/Logo.png" alt="LOGO" id="Logo" />
+      </a>
 
-          <div class="btns nav-right">
-            <button class="contact">DM ME!</button>
-          </div>
+      <div class="nav-menu">
+        <ul class="nav-links nav-left">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#WhoAmI">Who am I?</a></li>
+          <li><a href="#">My Interests</a></li>
+          <!-- <li><a href="#">My O My</a></li> -->
+          <li><a href="#">My Goals</a></li>
+        </ul>
 
+        <div class="btns nav-right">
+          <button class="contact">DM ME!</button>
         </div>
-        <div class="Hamburger-Background">
-            <button
-            class="hamburger"
-            id="hamburger-btn"
-            aria-label="Toggle Navigation"
-            >
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            </button>
-        </div>
-      </nav>
-    </div>
-
-    <section id="Home">
-      <div class="hero-section">
-        <div class="Main-title">
-          <div class="glass-box reveal-element delay-1">
-            <h1 class="Main-title-text reveal-element delay-2">
-              Experience my World
-            </h1>
-            <p class="Main-title-text reveal-element delay-3">in</p>
-            <h1 class="Main-title-text reveal-element delay-4">
-              Tanjiro's Style
-            </h1>
-          </div>
-        </div>
-        <div class="video-overlay"></div>
-        <video
-          src="assets/Hero-Section-Video.mp4"
-          autoplay
-          muted
-          id="Hero-Section-Video"
-        ></video>
       </div>
-    </section>
+      <div class="Hamburger-Background">
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
 
-    <section id="WhoAmI">
-        <div class="Main Headline">
-            
+  <section id="Home">
+    <div class="hero-section">
+      <div class="Main-title">
+        <div class="glass-box reveal-element delay-1">
+          <h1 class="Main-title-text reveal-element delay-2">
+            Experience my World
+          </h1>
+          <p class="Main-title-text reveal-element delay-3">in</p>
+          <h1 class="Main-title-text reveal-element delay-4">
+            Tanjiro's Style
+          </h1>
         </div>
-    </section>
-  </body>
-  <script src="./script.js"></script>
+      </div>
+      <div class="video-overlay"></div>
+      <video src="assets/Hero-Section-Video.mp4" autoplay muted id="Hero-Section-Video"></video>
+    </div>
+  </section>
+
+  <section id="WhoAmI">
+    <div class="scroll-wrapper">
+      <div class="canvas-wrapper">
+        <canvas id="animation-canvas"></canvas>
+      </div>
+    </div>
+    <div class="Introduction">
+      
+    </div>
+  </section>
+
+</body>
+<script src="./script.js"></script>
+
 </html>

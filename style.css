@@ -13,6 +13,14 @@
   font-display: swap;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +32,8 @@ body {
   background-color: black;
   color: white;
 }
+
+/* Section 1 work starts here */
 
 /* Navbar Work Starts Here */
 
@@ -114,7 +124,7 @@ nav {
     12px 12px 24px #2e8b57;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -160,7 +170,7 @@ nav {
   gap: 1.5rem;
 }
 
-.hamburger{
+.hamburger {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -174,7 +184,7 @@ nav {
   margin: 10px;
 }
 
-.hamburger .bar{
+.hamburger .bar {
   width: 100%;
   height: 3px;
   background-color: #ffffff;
@@ -182,15 +192,15 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger.active .bar:nth-child(1){
+.hamburger.active .bar:nth-child(1) {
   transform: translateY(8.5px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(2){
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8.5px) rotate(-45deg);
 }
 
@@ -222,13 +232,20 @@ nav {
     gap: 20px;
     padding: 30px 20px;
     border-radius: 16px;
-    
+
     /* Frosted glass background matching your theme */
-    background: rgba(18, 18, 18, 0.95);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+
+    /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.08);
+
+    /* Subtle white border to simulate glass edges */
     border: 1px solid rgba(255, 255, 255, 0.15);
-    
+
+    /* Soft box shadow to elevate the card from the video */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
     transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
@@ -252,12 +269,11 @@ nav {
   }
 }
 
-
 /* NavBar Work Ends Here */
 
 .hero-section {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -362,11 +378,54 @@ nav {
 
 /* Responsive Glass Box work starts here */
 
-
 @media (max-width: 390px) {
-  .glass-box{
+  .glass-box {
     padding: 40px 30px;
-  } 
+  }
 }
 
 /* Responsive Glass Box Work ends here */
+/* Section 1 work ends here */
+
+
+
+/* Section 2 work starts here */
+
+/* Scroll animation work starts here */
+
+/* Section 2 Responsive Setup */
+#WhoAmI {
+  width: 100%;
+  position: relative;
+}
+
+.scroll-wrapper {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh; /* Handles dynamic mobile toolbars */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#animation-canvas {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  object-fit: cover;
+}
+/* Scroll animation work ends here */
+
+/* Section 2 work ends here */
