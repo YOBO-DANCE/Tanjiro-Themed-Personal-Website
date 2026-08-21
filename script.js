@@ -1,40 +1,67 @@
-// Hamburger Menu
-const hamburger = document.getElementById("hamburger-btn");
-const navMenu = document.querySelector(".nav-menu");
+// --- HAMBURGER MENU ---
+const hamburger = document.getElementById('hamburger-btn');
+const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+if (hamburger && navMenu) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
   });
-});
 
-// GSAP & Scroll Animation
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+}
+
+// --- GSAP & CANVAS SETUP ---
 gsap.registerPlugin(ScrollTrigger);
 
 const canvas = document.getElementById("animation-canvas");
 const context = canvas.getContext("2d");
 
-const baseWidth = 1920;
-const baseHeight = 1080;
+const frameCount = 300; 
+const animationState = { frame: 0 }; 
 
-const frameCount = 300;
-// Updated path with explicit ./
-const currentFrame = (index) =>
-  `./images/ezgif-frame-${index.toString().padStart(3, "0")}.png`;
+// Arrays to cache preloaded images
+const landscapeImages = [];
+const portraitImages = [];
 
-const images = [];
-const airpods = { frame: 0 };
+// Helper to determine active screen orientation
+const isPortrait = () => window.innerHeight > window.innerWidth;
+
+// Return base aspect ratio resolution depending on orientation
+function getBaseDimensions() {
+  return isPortrait() 
+    ? { width: 1080, height: 1920 }  // Portrait base resolution
+    : { width: 1920, height: 1080 }; // Landscape base resolution
+}
+
+// --- PRELOAD BOTH LANDSCAPE & PORTRAIT FRAMES ---
+function preloadImages() {
+  for (let i = 1; i <= frameCount; i++) {
+    const formattedIndex = i.toString().padStart(3, '0');
+
+    // Preload Landscape Frame (Root ./images/ folder)
+    const imgLand = new Image();
+    imgLand.src = `./images/ezgif-frame-${formattedIndex}.png`;
+    landscapeImages.push(imgLand);
+
+    // Preload Portrait Frame (./images/portrait/ folder)
+    const imgPort = new Image();
+    imgPort.src = `./images/portrait/ezgif-frame-${formattedIndex}.png`;
+    portraitImages.push(imgPort);
+  }
+}
 
 // --- RENDER CURRENT FRAME ---
 function render() {
-  const img = images[airpods.frame];
-  // Check if image exists AND has finished loading
+  const activeImages = isPortrait() ? portraitImages : landscapeImages;
+  const img = activeImages[animationState.frame];
+
+  // Prevent drawing if frame isn't ready
   if (!img || !img.complete || img.naturalWidth === 0) return;
 
   const rect = canvas.getBoundingClientRect();
@@ -42,11 +69,13 @@ function render() {
 
   context.clearRect(0, 0, rect.width, rect.height);
 
+  const { width: baseWidth, height: baseHeight } = getBaseDimensions();
   const imageRatio = baseWidth / baseHeight;
   const canvasRatio = rect.width / rect.height;
 
   let renderWidth, renderHeight, xOffset, yOffset;
 
+  // Object-fit: COVER math (Edge-to-edge rendering without black bars)
   if (canvasRatio > imageRatio) {
     renderWidth = rect.width;
     renderHeight = rect.width / imageRatio;
@@ -62,9 +91,9 @@ function render() {
   context.drawImage(img, xOffset, yOffset, renderWidth, renderHeight);
 }
 
-// --- RESPONSIVE CANVAS SCALING ---
+// --- RESPONSIVE CANVAS SCALING FOR HIGH-DPI DISPLAYS ---
 function resizeCanvas() {
-  const dpr = window.devicePixelRatio || 1;
+  const dpr = window.devicePixelRatio || 1; 
   const rect = canvas.getBoundingClientRect();
 
   if (rect.width === 0 || rect.height === 0) return;
@@ -72,45 +101,39 @@ function resizeCanvas() {
   canvas.width = rect.width * dpr;
   canvas.height = rect.height * dpr;
 
-  // Reset scale matrix before multiplying by DPR
-  context.setTransform(1, 0, 0, 1, 0, 0);
+  // Reset transform matrix to prevent scale stacking on resize
+  context.setTransform(1, 0, 0, 1, 0, 0); 
   context.scale(dpr, dpr);
 
   render();
 }
 
-// --- PRELOAD ASSETS SAFELY ---
-let loadedCount = 0;
+// --- INITIALIZE & LISTENERS ---
+preloadImages();
 
-for (let i = 0; i < frameCount; i++) {
-  const img = new Image();
-  img.src = currentFrame(i + 1);
+// Initial frame drawing once frame 1 is ready
+landscapeImages[0].onload = () => resizeCanvas();
+portraitImages[0].onload = () => resizeCanvas();
 
-  img.onload = () => {
-    loadedCount++;
-    // Draw initial frame as soon as frame 1 finishes loading
-    if (i === 0) {
-      resizeCanvas();
-    }
-  };
-
-  images.push(img);
+// Fallback in case images are cached
+if (landscapeImages[0].complete || portraitImages[0].complete) {
+  resizeCanvas();
 }
 
 window.addEventListener("resize", resizeCanvas);
 
-// --- GSAP SCROLLANIMATION TRACKER ---
-gsap.to(airpods, {
+// --- GSAP SCROLL ANIMATION TRACKER ---
+gsap.to(animationState, {
   frame: frameCount - 1,
   snap: "frame",
   ease: "none",
   scrollTrigger: {
     trigger: ".scroll-wrapper",
     start: "top top",
-    end: () => (window.innerWidth < 768 ? "+=3000" : "+=6000"),
+    end: () => window.innerWidth < 768 ? "+=3000" : "+=6000",
     scrub: 0.5,
     pin: true,
-    invalidateOnRefresh: true,
+    invalidateOnRefresh: true
   },
-  onUpdate: render,
+  onUpdate: render
 });
