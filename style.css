@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @font-face {
   font-family: "Blood Crow Condensed";
   src:
@@ -465,8 +466,6 @@ nav {
 }
 /* Scroll animation work ends here */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+AU+TAS:wght@100..400&display=swap');
-
 .bio{
   height: 100%;
   height: 100dvh;
@@ -475,25 +474,89 @@ nav {
   padding: 0;
   display: flex;
   z-index: 2;
-  background-color: grey;
+  background-color: rgb(232, 230, 220);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .Hero-title{
   font-size: 100px;
   text-align: center;
+  place-self: start start;
 }
 
 #Hero-text-normal{
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 #Hero-text-cursive{
-  font-family: "Playwrite AU TAS", cursive;
-  font-optical-sizing: auto;
+  font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
 }
+
+.Introduction-hero-title{
+  border: 4px solid black;
+}
+
+.Introduction-para{
+  border: 4px solid black;
+
+}
+
+/* Carousel Animation work starts here */
+.carousel{
+  display: flex;
+  margin: 100px auto;
+  width: 90%;
+  border: 2px solid black;
+  overflow-x: scroll;
+}
+
+/* .carousel::-webkit-scrollbar{
+  display: none;
+} */
+
+.group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  /* animation: spin 5s linear infinite; */
+  padding: 0.5em;
+}
+
+.card{
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  background: cornflowerblue;
+  font-size: 3rem;
+  border-radius: .2em;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes spin{
+  from{translate: 0%;}
+  to{translate: -100%;}
+}
+
+.img_1{
+  height: 70%;
+  justify-self: flex-start;
+}
+
+.img_2{
+  height: 20%;
+}
+
+
+/* Carousel Animation work ends here */
 
 /* Section 2 work ends here */
