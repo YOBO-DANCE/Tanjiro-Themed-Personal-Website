@@ -121,3 +121,13 @@ gsap.to(animationState, {
   },
   onUpdate: render
 });
+
+gsap.to("body", {
+  backgroundColor: "#12181b",
+  scrollTrigger: {
+    trigger: "#bio",
+    start: "top 80%",
+    end: "top 20%",
+    scrub: true
+  }
+});
