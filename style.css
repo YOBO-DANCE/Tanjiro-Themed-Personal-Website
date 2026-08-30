@@ -526,6 +526,9 @@ nav {
 .Introduction-para{
   /* border: 4px solid black; */
   max-width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Carousel Animation work starts here */
