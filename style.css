@@ -38,10 +38,29 @@ body {
   background-color: #0b0b0d;
   color: white;
   transition: background-color 0.8s ease;
+  cursor: none;
+}
+
+/* Custom cursor */
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .circle{
+    display: none;
+  }
 }
 
 /* Section 1 work starts here */
-
 /* Navbar Work Starts Here */
 
 .NavBar {
@@ -73,7 +92,7 @@ nav {
 #Logo {
   height: 50px;
   width: auto;
-  cursor: default;
+  cursor: none;
   margin: -9px;
   flex: 1;
   align-items: center;
@@ -218,7 +237,7 @@ nav {
     position: static;
     transform: none;
     order: -1;
-    cursor: default;
+    cursor: none;
     margin: 0;
     margin-right: auto;
     margin-left: -10px;
@@ -629,6 +648,7 @@ nav {
     margin: auto;
     margin-top: 1rem;
     width: 80%;
+    margin-bottom: 10%;
   }
 }
 /* Section 3 Responsive ends starts */
