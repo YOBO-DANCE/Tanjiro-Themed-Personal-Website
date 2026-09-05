@@ -1,16 +1,15 @@
+![Logo](https://wallpapersafari.com/demon-slayer-youtube-banner-wallpapers/)
 # Tanjiro Portfolio
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
 
 ---
 
-![Hero screenshot](assets/Hero-Section-Video.mp4)
-
-> **Prefer a GIF?** Replace the video above with a 5–10s screen recording of the hero + sword rack interaction. A GIF converts skimmers faster than any description.
+![Hero ScreenShot]()
 
 ---
 
-## 👉 [Live Demo](https://your-deployment-url.com)
+## [Live Demo](https://tanjiropersonal.netlify.app)
 
 **Deploy in 30 seconds:** drag the folder to [Netlify Drop](https://app.netlify.com/drop), [Vercel](https://vercel.com/new), or `npx surge .`
 
@@ -70,11 +69,6 @@ The canvas animation preloads **600 images** (300 landscape + 300 portrait frame
 ### Scroll-Scrubbed Frame Animation
 Instead of video, the "Who Am I" section uses a `<canvas>` rendering 300 preloaded PNG frames. GSAP's `ScrollTrigger` maps scroll progress → frame index with `scrub: 0.5`, creating a buttery frame-perfect animation that feels like video but responds to scroll direction/speed instantly.
 
-**Tradeoff:** 600 images ≈ 15–30MB depending on compression. Chosen over `<video>` because:
-- Frame-accurate seeking (video keyframes are coarse)
-- Works offline without buffering
-- Easy to swap frames for design iterations
-
 ### Custom Cursor Physics
 20 circles follow the mouse with a spring-damper model: each circle chases the previous one at 30% of the distance per frame (`requestAnimationFrame`). Scale decreases linearly from front to back. Zero dependencies, ~40 lines.
 
@@ -120,4 +114,4 @@ MIT — use, modify, ship your own themed portfolio.
 
 ---
 
-*Water Breathing — Tenth Form: Constant Flux*
+*Sun Breathing 12th Form - Flame DANCE!!!!*
