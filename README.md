@@ -135,10 +135,10 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
 
 ## Accessibility Status
 
-- [ ] `prefers-reduced-motion` — disable cursor, reduce animation duration
-- [ ] Focus-visible styles for keyboard navigation
-- [ ] ARIA labels
-- [ ] Alt text on decorative images
+- [x] `prefers-reduced-motion` — disable cursor, reduce animation duration
+- [x] Focus-visible styles for keyboard navigation
+- [x] ARIA labels
+- [x] Alt text on decorative images
 
 ---
 
