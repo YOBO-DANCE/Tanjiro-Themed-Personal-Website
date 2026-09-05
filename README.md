@@ -1,11 +1,11 @@
-![Logo](./_README_FILES_/f7d14faabc8bd8e13a0580c474314800.jpg)
+![Logo](./README_FILES/f7d14faabc8bd8e13a0580c474314800.jpg)
 # Tanjiro Portfolio
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
 
 ---
 
-![Hero_ScreenShot](./_README_FILES_/Screenshot 2026-09-05 145045.png)
+![Hero_ScreenShot](./README_FILES/Screenshot%2026-09-05%145045.png)
 
 ---
 
@@ -37,14 +37,14 @@ Open `http://localhost:3000` (or 8000). That's it.
 ## Features
 
 - **300-frame canvas animation scrubbed to scroll** — GSAP ScrollTrigger pins the section and advances frames 1:1 with scroll position; dual portrait/landscape asset sets
-![Gif](_README_FILES_/Recording 2026-09-05 150720.gif)
+![Gif](_README_FILES_/Recording%2026-09-05%150720.gif)
 
 
 - **Physics-based custom cursor** — 20 trailing circles with spring interpolation and gradient color mapping; auto-disables on touch devices
-![Gif](_README_FILES_/Recording 2026-09-05 145810.gif)
+![Gif](_README_FILES_/Recording%2026-09-05%145810.gif)
 
 - **Interactive Nichirin sword rack** — 5 swords as portfolio items; click opens a glassmorphism modal with dynamic content (book link, YouTube playlist, or stats)
-![Gif](_README_FILES_/Recording 2026-09-05 151218.gif)
+![Gif](_README_FILES_/Recording%2026-09-05%151218.gif)
 
 - **Full glassmorphism system** — Consistent `backdrop-filter: blur(20px)` across navbar, hero overlay, bio card, and stats modal
 
