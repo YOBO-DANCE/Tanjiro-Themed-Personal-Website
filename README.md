@@ -1,19 +1,11 @@
-<<<<<<< HEAD
 ![Logo](./_README_FILES_/f7d14faabc8bd8e13a0580c474314800.jpg)
-=======
-![Logo](./assets/f7d14faabc8bd8e13a0580c474314800.jpg)
->>>>>>> 1eba47667728090588f8b3e62e608f04f3cfadb3
 # Tanjiro Portfolio
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
 
 ---
 
-<<<<<<< HEAD
 ![Hero_ScreenShot](./_README_FILES_/Screenshot 2026-09-05 145045.png)
-=======
-![Hero ScreenShot]()
->>>>>>> 1eba47667728090588f8b3e62e608f04f3cfadb3
 
 ---
 
@@ -28,7 +20,6 @@ A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tan
 ```bash
 # No build step, no dependencies
 npx serve .
-<<<<<<< HEAD
 ```
 ![Gif](_README_FILES_/Recording 2026-09-05 150237.gif)
 
@@ -39,11 +30,6 @@ python -m http.server 8000
 ```
 ![Gif](_README_FILES_/Recording 2026-09-05 145810.gif)
 
-=======
-# or
-python -m http.server 8000
-```
->>>>>>> 1eba47667728090588f8b3e62e608f04f3cfadb3
 
 Open `http://localhost:3000` (or 8000). That's it.
 
@@ -52,7 +38,6 @@ Open `http://localhost:3000` (or 8000). That's it.
 ## Features
 
 - **300-frame canvas animation scrubbed to scroll** — GSAP ScrollTrigger pins the section and advances frames 1:1 with scroll position; dual portrait/landscape asset sets
-<<<<<<< HEAD
 ![Gif](_README_FILES_/Recording 2026-09-05 150720.gif)
 
 
@@ -64,13 +49,6 @@ Open `http://localhost:3000` (or 8000). That's it.
 
 - **Full glassmorphism system** — Consistent `backdrop-filter: blur(20px)` across navbar, hero overlay, bio card, and stats modal
 
-=======
-- **Physics-based custom cursor** — 20 trailing circles with spring interpolation and gradient color mapping; auto-disables on touch devices
-- **Interactive Nichirin sword rack** — 5 swords as portfolio items; click opens a glassmorphism modal with dynamic content (book link, YouTube playlist, or stats)
-- **Horizontal wheel navigation** — Vertical scroll wheel pans the sword rack horizontally (`passive: false` for instant response)
-- **Full glassmorphism system** — Consistent `backdrop-filter: blur(20px)` across navbar, hero overlay, bio card, and stats modal
-- **Zero build, zero framework** — Single `index.html`, `style.css`, `script.js`; runs offline
->>>>>>> 1eba47667728090588f8b3e62e608f04f3cfadb3
 - **Responsive at 5 breakpoints** — 1023/900/768/600/390px with layout shifts (grid→stack, carousel hide, drawer navbar, label hide)
 
 ---
