@@ -1,15 +1,16 @@
 ![Logo](./README_FILES/f7d14faabc8bd8e13a0580c474314800.jpg)
+
 # Tanjiro Portfolio
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
 
 ---
 
-![Hero_ScreenShot](./README_FILES/Screenshot%2026-09-05%145045.png)
+![Hero Screenshot](./README_FILES/Screenshot%202026-09-05%20145045.png)
 
 ---
 
-## [Live Demo](https://tanjiropersonal.netlify.app)
+## 👉 [Live Demo](https://tanjiropersonal.netlify.app)
 
 **Deploy in 30 seconds:** drag the folder to [Netlify Drop](https://app.netlify.com/drop), [Vercel](https://vercel.com/new), or `npx surge .`
 
@@ -17,38 +18,40 @@ A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tan
 
 ## Quick Start
 
+Run either of the following commands to start a local development server:
+
 ```bash
-# No build step, no dependencies
+# Option 1: Serve using Node.js (opens on http://localhost:3000)
 npx serve .
 ```
-![Gif](_README_FILES_/Recording 2026-09-05 150237.gif)
 
-# or
+![Node Server Demo](./README_FILES/Recording%202026-09-05%20150237.gif)
 
 ```bash
+# Option 2: Serve using Python (opens on http://localhost:8000)
 python -m http.server 8000
 ```
-![Gif](_README_FILES_/Recording 2026-09-05 145810.gif)
 
-Open `http://localhost:3000` (or 8000). That's it.
+![Python Server Demo](./README_FILES/Recording%202026-09-05%20145810.gif)
+
+Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python). That's it.
 
 ---
 
 ## Features
 
-- **300-frame canvas animation scrubbed to scroll** — GSAP ScrollTrigger pins the section and advances frames 1:1 with scroll position; dual portrait/landscape asset sets
-![Gif](_README_FILES_/Recording%2026-09-05%150720.gif)
+- **300-frame canvas animation scrubbed to scroll** — GSAP ScrollTrigger pins the section and advances frames 1:1 with scroll position; dual portrait/landscape asset sets.
+  ![Frame Animation Demo](./README_FILES/Recording%202026-09-05%20150720.gif)
 
+- **Physics-based custom cursor** — 20 trailing circles with spring interpolation and gradient color mapping; auto-disables on touch devices.
+  ![Custom Cursor Demo](./README_FILES/Recording%202026-09-05%20145810.gif)
 
-- **Physics-based custom cursor** — 20 trailing circles with spring interpolation and gradient color mapping; auto-disables on touch devices
-![Gif](_README_FILES_/Recording%2026-09-05%145810.gif)
+- **Interactive Nichirin sword rack** — 5 swords as portfolio items; click opens a glassmorphism modal with dynamic content (book link, YouTube playlist, or stats).
+  ![Sword Rack Demo](./README_FILES/Recording%202026-09-05%20151218.gif)
 
-- **Interactive Nichirin sword rack** — 5 swords as portfolio items; click opens a glassmorphism modal with dynamic content (book link, YouTube playlist, or stats)
-![Gif](_README_FILES_/Recording%2026-09-05%151218.gif)
+- **Full glassmorphism system** — Consistent `backdrop-filter: blur(20px)` across navbar, hero overlay, bio card, and stats modal.
 
-- **Full glassmorphism system** — Consistent `backdrop-filter: blur(20px)` across navbar, hero overlay, bio card, and stats modal
-
-- **Responsive at 5 breakpoints** — 1023/900/768/600/390px with layout shifts (grid→stack, carousel hide, drawer navbar, label hide)
+- **Responsive at 5 breakpoints** — 1023/900/768/600/390px with layout shifts (grid→stack, carousel hide, drawer navbar, label hide).
 
 ---
 
@@ -72,7 +75,7 @@ php -S localhost:8000
 ```
 
 ### Assets Note
-The canvas animation preloads **600 images** (300 landscape + 300 portrait frames). First load may take 5–10s on slow connections. For development, reduce `frameCount` in `script.js:91` to a smaller number.
+The canvas animation preloads **600 images** (300 landscape + 300 portrait frames). First load may take 5–10s on slow connections. For development, reduce `frameCount` in `js/script.js` (around line 91) to a smaller number.
 
 ---
 
