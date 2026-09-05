@@ -3,7 +3,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
 
 
-<h1 style="font-size: 50px; font-family: 'Sekuya', system-ui; text-shadow: 0 0 10px #46b077;" align="center">Tanjiro-Themed Personal Website</h1>
+<h1 style="font-size: 50%; font-family: 'Sekuya', system-ui; text-shadow: 0 0 10% #46b077;" align="center">Tanjiro-Themed Personal Website</h1>
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
 <div style="display: flex; justify-content: center;">
