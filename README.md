@@ -1,4 +1,4 @@
-![Logo](https://wallpapersafari.com/demon-slayer-youtube-banner-wallpapers/)
+![Logo](./assets/f7d14faabc8bd8e13a0580c474314800.jpg)
 # Tanjiro Portfolio
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
