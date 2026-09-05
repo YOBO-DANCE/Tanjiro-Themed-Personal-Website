@@ -1,18 +1,17 @@
-![Logo](./README_FILES/f7d14faabc8bd8e13a0580c474314800.jpg)
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
 
-# Tanjiro Portfolio
+
+<h1 style="font-size: 50px; font-family: 'Sekuya', system-ui; text-shadow: 0 0 10px #46b077;" align="center">Tanjiro-Themed Personal Website</h1>
 
 A vanilla JavaScript personal portfolio website themed around Demon Slayer's Tanjiro Kamado, featuring scroll-scrubbed frame animation, a physics-based custom cursor, and an interactive Nichirin sword rack.
+<div style="display: flex; justify-content: center;">
+<img src="./README_FILES/Screenshot 2026-09-05 145045.png" alt="Hero Screenshot" style="width: 80%;">
+</div>
 
 ---
-
-![Hero Screenshot](./README_FILES/Screenshot%202026-09-05%20145045.png)
-
----
-
 ## 👉 [Live Demo](https://tanjiropersonal.netlify.app)
-
-**Deploy in 30 seconds:** drag the folder to [Netlify Drop](https://app.netlify.com/drop), [Vercel](https://vercel.com/new), or `npx surge .`
 
 ---
 
@@ -25,14 +24,14 @@ Run either of the following commands to start a local development server:
 npx serve .
 ```
 
-![Node Server Demo](./README_FILES/Recording%202026-09-05%20150237.gif)
+![Node Server Demo](./README_FILES/Node-Server-Demo.gif)
 
 ```bash
 # Option 2: Serve using Python (opens on http://localhost:8000)
 python -m http.server 8000
 ```
 
-![Python Server Demo](./README_FILES/Recording%202026-09-05%20145810.gif)
+![Python Server Demo](./README_FILES/Python-Server-Demo.gif)
 
 Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python). That's it.
 
@@ -40,18 +39,39 @@ Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python).
 
 ## Features
 
-- **300-frame canvas animation scrubbed to scroll** — GSAP ScrollTrigger pins the section and advances frames 1:1 with scroll position; dual portrait/landscape asset sets.
-  ![Frame Animation Demo](./README_FILES/Recording%202026-09-05%20150720.gif)
+- ### 300-frame canvas animation scrubbed to scroll — GSAP ScrollTrigger pins the section and advances frames 1:1 with scroll position; dual portrait/landscape asset sets.
+  ![Frame Animation Demo](./README_FILES/Scroll-Animation-Demo.gif)
 
-- **Physics-based custom cursor** — 20 trailing circles with spring interpolation and gradient color mapping; auto-disables on touch devices.
-  ![Custom Cursor Demo](./README_FILES/Recording%202026-09-05%20145810.gif)
+- ### Physics-based custom cursor — 20 trailing circles with spring interpolation and gradient color mapping; auto-disables on touch devices.
+  <div align="center">
+    <img src="./README_FILES/Custom-Cursor-Demo.gif" alt="Custom Cursor Demo" style="">
+  </div>
 
-- **Interactive Nichirin sword rack** — 5 swords as portfolio items; click opens a glassmorphism modal with dynamic content (book link, YouTube playlist, or stats).
-  ![Sword Rack Demo](./README_FILES/Recording%202026-09-05%20151218.gif)
+- ### Interactive Nichirin sword rack — 5 swords as portfolio items; click opens a glassmorphism modal with dynamic content (book link, YouTube playlist, or stats).
+  ![Sword Rack Demo](./README_FILES/Sword-Rack-Demo.gif)
 
-- **Full glassmorphism system** — Consistent `backdrop-filter: blur(20px)` across navbar, hero overlay, bio card, and stats modal.
+- ### Full glassmorphism system — Consistent `backdrop-filter: blur(20px)`
+  <div align="center">
 
-- **Responsive at 5 breakpoints** — 1023/900/768/600/390px with layout shifts (grid→stack, carousel hide, drawer navbar, label hide).
+    <img src="./README_FILES/Screenshot-2026-09-05-151351.png" alt="Glassmorphism UI Preview" width="800" />
+
+    <br>
+
+    <img src="./README_FILES/Screenshot 2026-09-05 151419.png" alt="Glassmorphism UI Preview" width="800" />
+
+    <br>
+
+    <img src="./README_FILES/Screenshot 2026-09-05 151444.png" alt="Glassmorphism UI Preview" width="800" />
+
+    <br>
+
+    <img src="./README_FILES/Screenshot 2026-09-05 151515.png" alt="Glassmorphism UI Preview" width="800" />
+
+  </div>
+
+
+- ### Responsive at 5 breakpoints — 1023/900/768/600/390px with layout shifts
+    ![Responsive Demo](README_FILES/Responsive-Demo.gif)
 
 ---
 
@@ -118,14 +138,15 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
 
 - [ ] `prefers-reduced-motion` — disable cursor, reduce animation duration
 - [ ] Focus-visible styles for keyboard navigation
-- [ ] ARIA labels on sword slots (currently `data-*` only)
+- [ ] ARIA labels
 - [ ] Alt text on decorative images
 
 ---
 
 ## License
 
-MIT — use, modify, ship your own themed portfolio.
+[![License: MIT](https://shields.io)](https://opensource.org)
+
 
 ---
 
