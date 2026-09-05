@@ -143,10 +143,20 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
 
 ---
 
-## License
+## Badges
 
-[![License: MIT](https://shields.io)](https://opensource.org)
 
+<p align="center">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/YOBO-DANCE">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
+  <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Ftanjiropersonal.netlify.app">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
+
+</p>
 
 ---
 
