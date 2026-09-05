@@ -30,7 +30,6 @@ python -m http.server 8000
 ```
 ![Gif](_README_FILES_/Recording 2026-09-05 145810.gif)
 
-
 Open `http://localhost:3000` (or 8000). That's it.
 
 ---
