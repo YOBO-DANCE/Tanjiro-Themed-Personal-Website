@@ -46,7 +46,7 @@ Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python).
 - ### A Sword-Rack to showcase your Talents & Achievement as Awards
   ![Sword Rack Demo](./README_FILES/Sword-Rack-Demo.gif)
 
-- ### Samsung Style Liquid Glass`
+- ### Samsung Style Liquid Glass
   <div align="center">
     <img src="./README_FILES/Screenshot-2026-09-05-151351.png" alt="Glassmorphism UI Preview" width="800" />
     <br>
