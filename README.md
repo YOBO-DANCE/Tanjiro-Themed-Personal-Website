@@ -82,7 +82,7 @@ php -S localhost:8000
 ```
 
 ### Assets Note 🚨
-The canvas animation preloads **600 images** (300 landscape + 300 portrait frames). First load may take 5–10s on slow connections. For development, reduce `frameCount` in `js/script.js` (around line 91) to a smaller number.
+The canvas animation preloads **600 images** (300 landscape + 300 portrait frames). First load may take 5–10s on slow connections. For development, reduce `frameCount` in `./script.js` (around line 91) to a smaller number.
 
 ## How It Works
 
