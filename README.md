@@ -90,7 +90,7 @@ The canvas animation preloads **600 images** (300 landscape + 300 portrait frame
 Instead of video, the "Who Am I" section uses a `<canvas>` rendering 300 preloaded PNG frames. GSAP's `ScrollTrigger` maps scroll progress → frame index with `scrub: 0.5`, creating a buttery frame-perfect animation that feels like video but responds to scroll direction/speed instantly.
 
 ### Sun Breathing Cursor
-20 circles follow the mouse with a spring-damper model: each circle chases the previous one at 30% of the distance per frame (`requestAnimationFrame`). Scale decreases linearly from front to back. Zero dependencies, ~40 lines.
+A Custom Sun Breathing Style Cursor which uses circles each colored in a different color and folows the Mouse
 
 ### Efficient use of `data-` attribute
 All sword content lives in HTML `data-*` attributes — no JS objects to maintain. One click handler reads `data-type` and renders the appropriate modal template (book button, song list, or plain stats). Adding a sword = one HTML block.
