@@ -1,36 +1,454 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanjiro Themed Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sekuya&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sekuya&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
 
-<body>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
     <div class="NavBar">
-        <nav>
-            <div class="logo">
-                <img src="assets/Logo.png" alt="LOGO" id="Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Who am I?</a></li>
-                <li><a href="#">My Interests</a></li>
-                <li><a href="#">My Love Life</a></li>
-                <li><a href="#">My Goals</a></li>
-            </ul>
-            <div class="btns">
-                <button class="contact">DM ME!</button>
-            </div>
-        </nav>
-    </div>
-</body>
+      <nav>
+        <a href="#" class="logo">
+          <img src="assets/Logo.png" alt="LOGO" id="Logo" />
+        </a>
 
+        <div class="nav-menu">
+          <ul class="nav-links nav-left">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#WhoAmI">Who am I?</a></li>
+            <li><a href="#bio">My Interests</a></li>
+            <!-- <li><a href="#">My O My</a></li> -->
+            <li><a href="#TanjiroInterests">My Goals</a></li>
+          </ul>
+
+          <div class="btns nav-right">
+            <a href="https://www.instagram.com/drgdeagenmnvi/"><button class="contact">DM ME!</button></a>
+          </div>
+        </div>
+        <div class="Hamburger-Background">
+          <button
+            class="hamburger"
+            id="hamburger-btn"
+            aria-label="Toggle Navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <section id="Home" class="boxed-section">
+      <div class="hero-section">
+        <div class="Main-title">
+          <div class="glass-box reveal-element delay-1">
+            <h1 class="Main-title-text reveal-element delay-2">
+              Experience my World
+            </h1>
+            <p class="Main-title-text reveal-element delay-3">in</p>
+            <h1 class="Main-title-text reveal-element delay-4">
+              Tanjiro's Style
+            </h1>
+          </div>
+        </div>
+        <div class="video-overlay"></div>
+        <video
+          src="assets/Hero-Section-Video.mp4"
+          autoplay
+          muted
+          id="Hero-Section-Video"
+        ></video>
+      </div>
+    </section>
+
+    <section id="WhoAmI" class="boxed-section">
+      <section class="scroll-animation">
+        <div class="scroll-wrapper">
+          <div class="canvas-wrapper">
+            <canvas id="animation-canvas"></canvas>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="bio" class="boxed-section">
+      <!-- Column 1: Carousel -->
+      <div class="carousel">
+        <div class="group">
+          <div class="card">
+            <img
+              src="./assets/Carousel/image.png"
+              alt="Vs Code"
+              class="img_1 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/windows-vista-vector-logo.png"
+              alt="Windows Vista"
+              class="img_2 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Linux-OS-Linux-vs-Windows-Edureka.png"
+              alt="Linux"
+              class="img_3 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Notepad_plus_plus.png"
+              alt="Notepad++"
+              class="img_4 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/opencode-logo-png_seeklogo-665459.png"
+              alt="Opencode"
+              class="img_5 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Python.webp"
+              alt="Python"
+              class="img_6 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Sublime_Text_3_logo.png"
+              alt="Sublime_Text"
+              class="img_7 img"
+            />
+          </div>
+        </div>
+        <div class="group">
+          <div class="card">
+            <img
+              src="./assets/Carousel/image.png"
+              alt="Vs Code"
+              class="img_1 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/windows-vista-vector-logo.png"
+              alt="Windows Vista"
+              class="img_2 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Linux-OS-Linux-vs-Windows-Edureka.png"
+              alt="Linux"
+              class="img_3 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Notepad_plus_plus.png"
+              alt="Notepad++"
+              class="img_4 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/opencode-logo-png_seeklogo-665459.png"
+              alt="Opencode"
+              class="img_5 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Python.webp"
+              alt="Python"
+              class="img_6 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Sublime_Text_3_logo.png"
+              alt="Sublime_Text"
+              class="img_7 img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Content Wrapper -->
+      <div class="bio-content">
+        <div class="Introduction-hero-title">
+          <h1 class="Hero-title" id="Hero-text-normal">And I like to Code</h1>
+          <h1 id="Hero-text-cursive" class="Hero-title">Alot :)</h1>
+        </div>
+        <div class="Introduction-para">
+          <p>
+            Hi, I’m Tanmay Hathile! After years of dedication, I’ve finally
+            fallen in love with coding, especially HTML, CSS, and my lovely
+            Python!<br />But, like every relationship, this one comes with its
+            own cost nowadays, I sleep like an owl >.<
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 1: Carousel -->
+      <div class="carousel">
+        <div class="group">
+          <div class="card">
+            <img
+              src="./assets/Carousel/image.png"
+              alt="Vs Code"
+              class="img_1 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/windows-vista-vector-logo.png"
+              alt="Windows Vista"
+              class="img_2 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Linux-OS-Linux-vs-Windows-Edureka.png"
+              alt="Linux"
+              class="img_3 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Notepad_plus_plus.png"
+              alt="Notepad++"
+              class="img_4 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/opencode-logo-png_seeklogo-665459.png"
+              alt="Opencode"
+              class="img_5 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Python.webp"
+              alt="Python"
+              class="img_6 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Sublime_Text_3_logo.png"
+              alt="Sublime_Text"
+              class="img_7 img"
+            />
+          </div>
+        </div>
+        <div class="group">
+          <div class="card">
+            <img
+              src="./assets/Carousel/image.png"
+              alt="Vs Code"
+              class="img_1 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/windows-vista-vector-logo.png"
+              alt="Windows Vista"
+              class="img_2 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Linux-OS-Linux-vs-Windows-Edureka.png"
+              alt="Linux"
+              class="img_3 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Notepad_plus_plus.png"
+              alt="Notepad++"
+              class="img_4 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/opencode-logo-png_seeklogo-665459.png"
+              alt="Opencode"
+              class="img_5 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Python.webp"
+              alt="Python"
+              class="img_6 img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./assets/Carousel/Sublime_Text_3_logo.png"
+              alt="Sublime_Text"
+              class="img_7 img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="TanjiroInterests">
+      <div class="sword-rack">
+        <div class="table-surface"></div>
+        <div class="swords-container">
+          <div
+            class="sword-slot"
+            data-type="author"
+            data-interest="Authored Novel"
+            data-form="First Form: Ink Surface Splash"
+            data-link="https://store.pothi.com/book/tanmay-hathile-midnight-hunger-volume-1/"
+            data-stats="Published Book: 'The Midnight Hunger Vol. 1' | Focus: Narrative Architecture, Dark Noir, World-building, Creative Storytelling"
+          >
+            <div class="sword-wrapper">
+              <img
+                src="./assets/Interests/nichirin-sword-1.png"
+                alt="Midnight Nichirin"
+                class="nichirin-sword"
+              />
+            </div>
+            <span class="sword-label">Author</span>
+          </div>
+
+          <div
+            class="sword-slot"
+            data-type="singing"
+            data-interest="Vocal Performance"
+            data-form="Second Form: Clear Blue ShineEEEEE!"
+            data-songs='[
+               {"title": "Smooth Criminal", "artist": "Michael Jackson", "url": "https://youtu.be/h_D3VFfhvs4?si=XerWg2PcKoxdoWto"},
+               {"title": "Take Me Home, Country Roads", "artist": "John Denver", "url": "https://youtu.be/1vrEljMfXYo?si=cBjIyPbe-4DyQOyj"},
+               {"title": "her", "artist": "JVKE", "url": "https://youtu.be/f5-IY_Ja1RM?si=EjcoeWGSDKE3-uEB"},
+               {"title": "Babydoll", "artist": "Dominic Fike", "url": "https://youtu.be/nb8CnIo_-_A?si=IJbYUo6QkmrkLnem"},
+               {"title": "See More!", "artist": "Me", "url": "https://open.spotify.com/playlist/4xqB7qwftfZaDPWaCzBFI3"}
+             ]'
+          >
+            <div class="sword-wrapper">
+              <img
+                src="./assets/Interests/nichirin-sword-2.png"
+                alt="Song Breathing Nichirin"
+                class="nichirin-sword"
+              />
+            </div>
+            <span class="sword-label">Singing</span>
+          </div>
+
+          <div
+            class="sword-slot"
+            data-type="general"
+            data-interest="Origami Arts"
+            data-form="Third Form: Origami Swarm"
+            data-stats="Focus: Precision, Spatial Structure, Patience, Transforming Plain Paper into Complex Shapes"
+          >
+            <div class="sword-wrapper">
+              <img
+                src="./assets/Interests/nichirin-sword-3.png"
+                alt="Origami Nichirin"
+                class="nichirin-sword"
+              />
+            </div>
+            <span class="sword-label">Origami</span>
+          </div>
+
+          <div
+            class="sword-slot"
+            data-type="general"
+            data-interest="Badminton Career"
+            data-form="Fourth Form: Smash n' Strike"
+            data-stats="Aspiration: Professional Athlete | Focus: Peak Reflexes, Agility, Court Vision, Explosive Footwork"
+          >
+            <div class="sword-wrapper">
+              <img
+                src="./assets/Interests/nichirin-sword-4.png"
+                alt="Badminton Nichirin"
+                class="nichirin-sword"
+              />
+            </div>
+            <span class="sword-label">Badminton</span>
+          </div>
+
+          <div
+            class="sword-slot"
+            data-type="general"
+            data-interest="Rollerblade Skating"
+            data-form="Fifth Form: Blessed Rain After the Glide"
+            data-stats="Sensation: Infinite Glide | Focus: Momentum, Balance, Fluid Motion, Free-flowing Movement"
+          >
+            <div class="sword-wrapper">
+              <img
+                src="./assets/Interests/nichirin-sword-5.png"
+                alt="Rollerblade Nichirin"
+                class="nichirin-sword"
+              />
+            </div>
+            <span class="sword-label">Rollerblade Skating</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="sword-stats-modal" class="stats-modal">
+        <div class="modal-header">
+          <span id="stat-form" class="stat-form-tag">Select a Blade</span>
+          <h3 id="stat-title">Inspect Tanmay's Weapons</h3>
+        </div>
+        <div id="stat-desc-container">
+          <p id="stat-desc">
+            Click any Nichirin sword resting on the display stand to inspect its
+            specs and corresponding passion.
+          </p>
+        </div>
+      </div>
+
+      <div class="tanjiro-foreground">
+        <img src="./assets/Haganezuka.webp" alt="Haganezuka" />
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
 </html>
