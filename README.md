@@ -92,7 +92,7 @@ Instead of video, the "Who Am I" section uses a `<canvas>` rendering 300 preload
 ### Sun Breathing Cursor
 A Custom Sun Breathing Style Cursor which uses circles each colored in a different color and folows the Mouse
 
-### Efficient use of `data-` attribute
+### Efficient use of `data-*` attribute
 All sword content lives in HTML `data-*` attributes — no JS objects to maintain. One click handler reads `data-type` and renders the appropriate modal template (book button, song list, or plain stats). Adding a sword = one HTML block.
 
 ### Liquid Glass!!!
