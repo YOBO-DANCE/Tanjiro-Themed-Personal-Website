@@ -1,4 +1,4 @@
-// --- HAMBURGER MENU ---
+// HAMBURGER MENU
 const hamburger = document.getElementById("hamburger-btn");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -253,23 +253,19 @@ document.querySelectorAll(".sword-slot").forEach((slot) => {
 });
 
 
-
+// Vertical Scroll for Sword Rack
 const container = document.querySelector('.swords-container');
 const statFormTag = document.getElementById('stat-form');
 const statTitle = document.getElementById('stat-title');
 const statDesc = document.getElementById('stat-desc');
 
-// Translate vertical wheel scroll inputs into horizontal row panning instantly
 container.addEventListener('wheel', (event) => {
   if (event.deltaY !== 0) {
-    event.preventDefault(); // Stop window block bounce
-    
-    // Nudges coordinates instantly. Multiplied by 1.2 for comfortable travel speed.
+    event.preventDefault();
     container.scrollLeft += event.deltaY * 1.2; 
   }
 }, { passive: false });
 
-// Update stats modal card text nodes dynamically when slots are clicked
 document.querySelectorAll('.sword-slot').forEach(slot => {
   slot.addEventListener('click', () => {
     const form = slot.getAttribute('data-form');
