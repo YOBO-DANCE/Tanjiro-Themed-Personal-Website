@@ -4,13 +4,13 @@
 
 ---
 A Tanjiro-Themed Personal Portfolio for Demon Slayer Lover 👺!
-<div style="display: flex; justify-content: center;">
+<div align="center">
 <img src="./README_FILES/Screenshot 2026-09-05 145045.png" alt="Hero Screenshot" style="width: 80%;">
 </div>
 
 ## Checkout My Tanjiro Style Portfolio
 
->>>[Just Click Here!](https://yobo-dance.github.io/Tanjiro-Themed-Personal-Website/)
+*>>>*[Just Click Here!](https://yobo-dance.github.io/Tanjiro-Themed-Personal-Website/)
 
 ## Quick Start
 
