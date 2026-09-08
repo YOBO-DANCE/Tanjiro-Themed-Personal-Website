@@ -10,7 +10,7 @@ A Tanjiro-Themed Personal Portfolio for Demon Slayer Lover 👺!
 
 ## Checkout My Tanjiro Style Portfolio
 
-👉[Just Click Here!](https://yobo-dance.github.io/Tanjiro-Themed-Personal-Website/)
+>>>[Just Click Here!](https://yobo-dance.github.io/Tanjiro-Themed-Personal-Website/)
 
 ## Quick Start
 
@@ -38,7 +38,7 @@ Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python).
 - ### Apple-Style Scroll-Animation Canvas
   ![Frame Animation Demo](./README_FILES/Scroll-Animation-Demo.gif)
 
-- ### A Custom Sun Breathing style Cursor for Tanjiro Lovers! 🫰❤️
+- ### A Custom Sun Breathing style Cursor for Tanjiro Lovers! ^.^
   <div align="center">
     <img src="./README_FILES/Custom-Cursor-Demo.gif" alt="Custom Cursor Demo" style="">
   </div>
@@ -46,7 +46,7 @@ Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python).
 - ### A Sword-Rack to showcase your Talents & Achievement as Awards
   ![Sword Rack Demo](./README_FILES/Sword-Rack-Demo.gif)
 
-- ### Samsung Style Liquid Glass`
+- ### Samsung Style Liquid Glass
   <div align="center">
     <img src="./README_FILES/Screenshot-2026-09-05-151351.png" alt="Glassmorphism UI Preview" width="800" />
     <br>
@@ -92,7 +92,7 @@ Instead of video, the "Who Am I" section uses a `<canvas>` rendering 300 preload
 ### Sun Breathing Cursor
 20 circles follow the mouse with a spring-damper model: each circle chases the previous one at 30% of the distance per frame (`requestAnimationFrame`). Scale decreases linearly from front to back. Zero dependencies, ~40 lines.
 
-### Efficient use of `data-` attribute
+### Efficient use of `data-*` attribute
 All sword content lives in HTML `data-*` attributes — no JS objects to maintain. One click handler reads `data-type` and renders the appropriate modal template (book button, song list, or plain stats). Adding a sword = one HTML block.
 
 ### Liquid Glass!!!
@@ -140,4 +140,4 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
 
 <h1 align='center'>Now GO AND MAKE YOUR OWN TANJIRO PORTFOLIO!</h1>
 
-*Code Breathing 12th Form - Dispression Dance🥲*
+*Code Breathing 12th Form - Dispression Dance ╯︿╰*
