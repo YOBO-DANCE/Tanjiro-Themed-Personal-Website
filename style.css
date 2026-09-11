@@ -18,6 +18,18 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #fff;
+}
+
+::-webkit-scrollbar-track{
+  background: #ffffff00;
+}
+
 html,
 body {
   width: 100%;
@@ -390,9 +402,87 @@ nav {
 
 
 /* Section 2 work starts here */
+
+#WhoAmI{
+  width: 100vw;
+  background-image: url(./assets/original-10937e5872189bb501a0f1ca1e2e4579.webp); 
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.left_text_box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Sekuya", system-ui;
+  font-size: clamp(2px, 1rem + 1vw, 10px);
+  z-index: 3;
+}
+
+.text-box-left{
+  text-align: justify;
+  margin-left: 20px;
+}
+
+.text-center{
+  display: block;
+  text-align: center;
+  margin: auto 0; 
+}
+
+.text-glass-box{
+  padding: 20px 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.right_text_box{
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  font-family: "Sekuya", system-ui;
+  font-size: clamp(2px, 1rem + 1vw, 10px);
+  margin-right: 25px;
+  z-index: 2;
+}
+
+/* Responsive Work */
+@media (max-width: 425px){
+  .right_text_box{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    align-items: flex-end;
+  }
+
+  .left_text_box{
+    width: 10px;
+    align-items: flex-start;
+  }
+
+  .text-glass-box{
+    padding: 20px 25px;
+  }
+
+  .text-box-left{
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+}
+
+/* Reveal element */
+
 /* Scroll animation work starts here */
 /* Section 2 Responsive Setup */
-#WhoAmI {
+/* #WhoAmI {
   width: 100%;
   position: relative;
 }
@@ -476,7 +566,7 @@ nav {
     display: block;
     object-fit: cover;
   }
-}
+} */
 /* Scroll animation work ends here */
 /* Section 2 work ends here */
 
@@ -491,6 +581,10 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  position: relative;          
+  padding: 5%;                 
+  min-height: 300px;
+  overflow: hidden;
 }
 
 .Hero-title {
@@ -605,13 +699,34 @@ nav {
   padding: 24px;
 }
 
+.Tanjiro_enthusiasm{
+  position: absolute;          
+  bottom: 30%;
+  left: -3.5%;
+  width: 12rem;                 
+  min-width: 60px;             
+  max-width: 130px;            
+  height: auto;
+  transform: rotate(45deg);
+}
+
 /* Section 3 Responsive work starts */
+@media (max-width: 600px) {
+  #bio {
+    padding-bottom: 80px;
+  }
+  .Tanjiro_enthusiasm{
+    left: -9.5%;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel {
     display: none;
   }
   #bio {
     grid-template-columns: 1fr;
+    
   }
   .Introduction-para {
     margin: auto;
