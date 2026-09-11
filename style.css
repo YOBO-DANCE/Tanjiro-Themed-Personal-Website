@@ -419,13 +419,13 @@ nav {
   justify-content: flex-start;
   align-items: center;
   font-family: "Sekuya", system-ui;
-  font-size: clamp(2px, 1rem + 1vw, 10px);
+  font-size: clamp(2px, 1rem + 1vw, 6px);
   z-index: 3;
+  margin-left: 20px;
 }
 
 .text-box-left{
   text-align: justify;
-  margin-left: 20px;
 }
 
 .text-center{
@@ -449,13 +449,13 @@ nav {
   /* justify-content: flex-end; */
   align-items: center;
   font-family: "Sekuya", system-ui;
-  font-size: clamp(2px, 1rem + 1vw, 10px);
+  font-size: clamp(2px, 1rem + 1vw, 6px);
   margin-right: 25px;
   z-index: 2;
 }
 
 /* Responsive Work */
-@media (max-width: 425px){
+@media (max-width: 426px){
   .right_text_box{
     margin-right: auto;
     margin-left: auto;
@@ -475,6 +475,7 @@ nav {
   .text-box-left{
     margin-left: 100px;
     margin-top: 30px;
+    text-align: justify;
   }
 }
 
