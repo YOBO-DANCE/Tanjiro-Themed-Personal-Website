@@ -454,6 +454,10 @@ nav {
   z-index: 2;
 }
 
+@media (max-width: 768px){
+  
+}
+
 /* Responsive Work */
 @media (max-width: 426px){
   .right_text_box{
@@ -475,7 +479,13 @@ nav {
   .text-box-left{
     margin-left: 100px;
     margin-top: 30px;
-    text-align: justify;
+    text-align: center;
+  }
+}
+
+@media (max-width: 321px){
+  .text-box-left{
+    margin-left: 55px;
   }
 }
 
