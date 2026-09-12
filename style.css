@@ -454,17 +454,16 @@ nav {
   z-index: 2;
 }
 
-@media (max-width: 768px){
-  
-}
-
-/* Responsive Work */
-@media (max-width: 426px){
+@media (max-width: 767px){
   .right_text_box{
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
-    align-items: flex-end;
+    align-items: flex-end; */
+    position: absolute;
+    top: 176%;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 
   .left_text_box{
@@ -477,19 +476,50 @@ nav {
   }
 
   .text-box-left{
-    margin-left: 100px;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     margin-top: 30px;
+    text-align: center;
+  }
+
+  .text-box-right{
     text-align: center;
   }
 }
 
-@media (max-width: 321px){
-  .text-box-left{
-    margin-left: 55px;
-  }
+/* Reveal element */
+.text-reveal-element {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: revealUp 2.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Reveal element */
+/* Main-title revealup animation work */
+.text-delay-1 {
+  animation-delay: 0.2s;
+}
+.text-delay-2 {
+  animation-delay: 0.9s;
+}
+.text-delay-3 {
+  animation-delay: 1.4s;
+}
+.text-delay-4 {
+  animation-delay: 1.6s;
+}
+
+.text-delay-5{
+  animation-delay: 2.3;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 /* Scroll animation work starts here */
 /* Section 2 Responsive Setup */
