@@ -18,15 +18,15 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 1px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #fff;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: #ffffff00;
 }
 
@@ -59,7 +59,7 @@ body {
   width: 24px;
   border-radius: 24px;
   background-color: black;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   pointer-events: none;
@@ -67,7 +67,7 @@ body {
 }
 
 @media (hover: none) and (pointer: coarse) {
-  .circle{
+  .circle {
     display: none;
   }
 }
@@ -400,66 +400,136 @@ nav {
 /* Responsive Glass Box Work ends here */
 /* Section 1 work ends here */
 
-
 /* Section 2 work starts here */
 
-#WhoAmI{
+#WhoAmI {
+  position: relative;
+  z-index: 1;
   width: 100vw;
-  background-image: url(./assets/original-10937e5872189bb501a0f1ca1e2e4579.webp); 
+  background-image: url(./assets/original-10937e5872189bb501a0f1ca1e2e4579.webp);
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 
-.left_text_box{
+.left_text_box,
+.right_text_box {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.left_text_box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-family: "Sekuya", system-ui;
   font-size: clamp(2px, 1rem + 1vw, 6px);
-  z-index: 3;
   margin-left: 20px;
 }
 
-.text-box-left{
+.text-box-left {
   text-align: justify;
 }
 
-.text-center{
+.text-center {
   display: block;
   text-align: center;
-  margin: auto 0; 
+  margin: auto 0;
 }
 
-.text-glass-box{
+.text-glass-box {
+  position: relative;
   padding: 20px 25px;
   border-radius: 16px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  isolation: isolate;
+  overflow: hidden;
 }
 
-.right_text_box{
+.text-glass-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: -1;
+}
+
+.right_text_box {
   display: flex;
   /* justify-content: flex-end; */
   align-items: center;
   font-family: "Sekuya", system-ui;
   font-size: clamp(2px, 1rem + 1vw, 6px);
   margin-right: 25px;
-  z-index: 2;
 }
 
-@media (max-width: 767px){
+.text-box-left,
+.text-box-right {
+  letter-spacing: 0.8px;
+}
+
+@media (max-width: 767px) {
+  #WhoAmI {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .left_text_box {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .right_text_box {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .text-glass-box {
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .text-box-left,
+  .text-box-right {
+    position: static;
+    transform: none;
+    margin: 0;
+    text-align: center;
+    text-shadow:
+      -1.5px -1.5px 0 #000,
+      1.5px -1.5px 0 #000,
+      -1.5px 1.5px 0 #000,
+      1.5px 1.5px 0 #000;
+    font-weight: bold;
+  }
+}
+
+/* @media (max-width: 767px){
   .right_text_box{
-    /* margin-right: auto;
+    margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
-    align-items: flex-end; */
+    align-items: flex-end;
     position: absolute;
     top: 176%;
     left: 50%;
@@ -487,7 +557,7 @@ nav {
   .text-box-right{
     text-align: center;
   }
-}
+} */
 
 /* Reveal element */
 
@@ -495,7 +565,6 @@ nav {
 .right_text_box {
   will-change: transform, opacity;
 }
-
 /* .text-reveal-element {
   opacity: 0;
   transform: translateY(30px) scale(0.95);
@@ -628,8 +697,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  position: relative;          
-  padding: 5%;                 
+  position: relative;
+  padding: 5%;
   min-height: 300px;
   overflow: hidden;
 }
@@ -684,8 +753,8 @@ nav {
   flex-direction: column;
   margin: 20px auto;
   width: 100%;
-  max-width: 300px; 
-  height: 80vh; 
+  max-width: 300px;
+  height: 80vh;
   max-height: 600px;
   overflow-y: hidden; /* hides vertical overflow */
   position: relative;
@@ -704,7 +773,7 @@ nav {
   gap: 1.5rem;
   animation: spinVertical 10s linear infinite;
   padding: 0.5em 0;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .card {
@@ -746,13 +815,13 @@ nav {
   padding: 24px;
 }
 
-.Tanjiro_enthusiasm{
-  position: absolute;          
+.Tanjiro_enthusiasm {
+  position: absolute;
   bottom: 30%;
   left: -3.5%;
-  width: 12rem;                 
-  min-width: 60px;             
-  max-width: 130px;            
+  width: 12rem;
+  min-width: 60px;
+  max-width: 130px;
   height: auto;
   transform: rotate(45deg);
 }
@@ -762,7 +831,7 @@ nav {
   #bio {
     padding-bottom: 80px;
   }
-  .Tanjiro_enthusiasm{
+  .Tanjiro_enthusiasm {
     left: -9.5%;
   }
 }
@@ -773,7 +842,6 @@ nav {
   }
   #bio {
     grid-template-columns: 1fr;
-    
   }
   .Introduction-para {
     margin: auto;
@@ -812,7 +880,7 @@ nav {
 .sword-rack {
   position: absolute;
   top: 20%;
-   width: 90%;           
+  width: 90%;
   max-width: 1300px;
   display: flex;
   flex-direction: column;

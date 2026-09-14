@@ -82,39 +82,34 @@ function animateCircles() {
 animateCircles();
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Register the ScrollTrigger plugin with GSAP
   gsap.registerPlugin(ScrollTrigger);
 
-  // 2. Who Am I Section Scroll Animation
-  const whoAmITimeline = gsap.timeline({
+  gsap.from("#WhoAmI .right_text_box", {
     scrollTrigger: {
       trigger: "#WhoAmI",
-      start: "top 75%", // Triggers when the top of #WhoAmI reaches 75% down the screen
-      toggleActions: "play none none none" // Plays once upon scroll
-    }
+      start: "top 75%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1.2,
+    ease: "power3.out",
+    clearProps: "all" 
   });
 
-  whoAmITimeline
-    // Step 1: Reveal "Hi I am TANMAY HATHILE" (Right Box)
-    .fromTo(
-      ".right_text_box",
-      { opacity: 0, y: 40, scale: 0.95 },
-      { opacity: 1, y: 0, scale: 1, duration: 1.4, ease: "power3.out" }
-    )
-    // Step 2: Reveal "I am a Passionate Programmer..." (Left Box)
-    .fromTo(
-      ".left_text_box",
-      { opacity: 0, y: 40, scale: 0.95 },
-      { opacity: 1, y: 0, scale: 1, duration: 1.4, ease: "power3.out" },
-      "-=0.9" // Overlaps slightly with the previous animation for fluidity
-    )
-    // Step 3: Pop in the highlighted "Coding!" span tag
-    .fromTo(
-      ".left_text_box span",
-      { opacity: 0, scale: 0.7 },
-      { opacity: 1, scale: 1, duration: 1.0, ease: "back.out(1.7)" },
-      "-=0.5"
-    );
+  gsap.from("#WhoAmI .left_text_box", {
+    scrollTrigger: {
+      trigger: "#WhoAmI",
+      start: "top 75%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1.2,
+    delay: 0.8, 
+    ease: "power3.out",
+    clearProps: "all" 
+  });
 });
 
 

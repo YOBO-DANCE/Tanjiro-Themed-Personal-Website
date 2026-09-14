@@ -112,9 +112,9 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
 | DM Sans, Sekuya, Titillium Web, Black Ops One | [Google Fonts](https://fonts.google.com/) |
 | Blood Crow Condensed | Base64-embedded in CSS (woff2 + woff) |
 | Hero video | Ufotables |
-| Nichirin sword illustrations | Generative AI / Gemini and ChatGPT |
+| Tanjiro Kamado Background in Section 2 | Kopetfangki |
+| Nichirin sword illustrations | Pinterest |
 | Haganezuka character art | Koyoharu Gotouge |
-| Frame sequence (300 frames) | Generated via ezgif and Gemini |
 
 ## Accessibility Status
 
