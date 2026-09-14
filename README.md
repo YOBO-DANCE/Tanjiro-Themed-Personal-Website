@@ -132,7 +132,7 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
-  <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fyobo-dance.github.io%2FTanjiro-Themed-Personal-Website%2F">
+  <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Ftanjiro-themed-personal-website.vercel.app%2F">
   <img alt="GitHub License" src="https://img.shields.io/github/license/YOBO-DANCE/Tanjiro-Themed-Personal-Website">
 
 </p>
