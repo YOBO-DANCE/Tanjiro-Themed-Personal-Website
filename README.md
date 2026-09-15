@@ -10,7 +10,7 @@ A Tanjiro-Themed Personal Portfolio for Demon Slayer Lover 👺!
 
 ## Checkout My Tanjiro Style Portfolio
 
-*>>>*[Just Click Here!](https://yobo-dance.github.io/Tanjiro-Themed-Personal-Website/)
+*>>>*[Just Click Here!](https://tanjiro-themed-personal-website.vercel.app/)
 
 ## Quick Start
 
@@ -34,9 +34,6 @@ Open `http://localhost:3000` (for Node) or `http://localhost:8000` (for Python).
 
 
 ## Features
-
-- ### Apple-Style Scroll-Animation Canvas
-  ![Frame Animation Demo](./README_FILES/Scroll-Animation-Demo.gif)
 
 - ### A Custom Sun Breathing style Cursor for Tanjiro Lovers! ^.^
   <div align="center">
@@ -138,6 +135,6 @@ Each uses identical `backdrop-filter`, border, and shadow values — change one 
 </p>
 
 
-<h1 align='center'>Now GO AND MAKE YOUR OWN TANJIRO PORTFOLIO!</h1>
+<h1 align='center'>NOW GO AND MAKE YOUR OWN TANJIRO PORTFOLIO!</h1>
 
 *Code Breathing 12th Form - Dispression Dance ╯︿╰*
