@@ -78,13 +78,7 @@ python -m http.server 8000
 php -S localhost:8000
 ```
 
-### Assets Note 🚨
-The canvas animation preloads **600 images** (300 landscape + 300 portrait frames). First load may take 5–10s on slow connections. For development, reduce `frameCount` in `./script.js` (around line 91) to a smaller number.
-
 ## How It Works
-
-### Apple-Style Animation Canvas
-Instead of video, the "Who Am I" section uses a `<canvas>` rendering 300 preloaded PNG frames. GSAP's `ScrollTrigger` maps scroll progress → frame index with `scrub: 0.5`, creating a buttery frame-perfect animation that feels like video but responds to scroll direction/speed instantly.
 
 ### Sun Breathing Cursor
 A Custom Sun Breathing Style Cursor which uses circles each colored in a different color and folows the Mouse
